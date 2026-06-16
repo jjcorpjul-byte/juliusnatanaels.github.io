@@ -1,8 +1,276 @@
 <!DOCTYPE html>
-   <html>
-   <head><title>Julius Natanael Sihite</title></head>
-   <body>
-     <h1>Halo, saya Julius Natanael Sihite </h1>
-     <p>Mahasiswa Teknologi Informasi | NIM: 103032300005</p>
-   </body>
-   </html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Julius Natanael Sihite</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#050816;
+    color:white;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(0,255,200,.15), transparent 25%),
+    radial-gradient(circle at 80% 50%, rgba(0,150,255,.12), transparent 30%);
+    z-index:-1;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    backdrop-filter: blur(10px);
+    background:rgba(0,0,0,.2);
+}
+
+nav h2{
+    color:#00ffd5;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#00ffd5;
+    text-shadow:0 0 20px rgba(0,255,213,.4);
+}
+
+.hero h3{
+    margin-top:10px;
+    font-weight:400;
+    color:#9ae6ff;
+}
+
+.hero p{
+    max-width:800px;
+    margin-top:25px;
+    line-height:1.8;
+    color:#d6d6d6;
+}
+
+.btn{
+    margin-top:30px;
+    display:inline-block;
+    padding:14px 30px;
+    background:#00ffd5;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:999px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px #00ffd5;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-size:2rem;
+    color:#00ffd5;
+    margin-bottom:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter: blur(8px);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:rgba(255,255,255,.04);
+    padding:25px;
+    border-radius:16px;
+    border:1px solid rgba(0,255,213,.15);
+}
+
+.skill-box h3{
+    color:#00ffd5;
+    margin-bottom:15px;
+}
+
+.skill-box ul{
+    line-height:1.9;
+}
+
+.contact a{
+    display:block;
+    margin-bottom:15px;
+    color:#9ae6ff;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    nav ul{
+        display:none;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <h2>JNS</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Julius Natanael Sihite</h1>
+    <h3>Information Technology Student | Cyber Security Enthusiast | AI Enthusiast</h3>
+    <p>
+        Securing the digital world while shaping the future with intelligent technology.
+    </p>
+    <a class="btn" href="#contact">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p style="line-height:1.9;">
+            Halo, saya <b>Julius Natanael Sihite</b>, mahasiswa Teknologi Informasi di 
+            <b>Telkom University</b> dengan minat besar pada bidang 
+            <b>Cyber Security</b> dan <b>Artificial Intelligence</b>. 
+            Saya tertarik mempelajari bagaimana teknologi dapat digunakan 
+            untuk membangun sistem yang canggih sekaligus menjaga keamanan, 
+            privasi, dan keandalan sistem tersebut di era digital.
+            <br><br>
+            Saya terus mengembangkan kemampuan dalam network security, 
+            ethical hacking, machine learning, dan software development 
+            melalui eksplorasi mandiri, project, dan pembelajaran berkelanjutan. 
+            Saya menikmati proses menganalisis masalah kompleks dan mencari 
+            solusi yang efektif.
+            <br><br>
+            Saya percaya masa depan teknologi akan dibentuk oleh kombinasi 
+            antara keamanan digital dan kecerdasan buatan. 
+            Karena itu, saya berkomitmen untuk terus berkembang menjadi 
+            profesional yang mampu menciptakan solusi yang aman, inovatif, 
+            dan berdampak luas.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+
+        <div class="skill-box">
+            <h3>Cyber Security</h3>
+            <ul>
+                <li>Network Security</li>
+                <li>Vulnerability Assessment</li>
+                <li>Linux Fundamentals</li>
+                <li>Ethical Hacking</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Artificial Intelligence</h3>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Data Analysis</li>
+                <li>Prompt Engineering</li>
+                <li>Python for AI</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Programming</h3>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Analytical Thinking</li>
+                <li>Communication</li>
+                <li>Fast Learner</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card contact">
+        <a href="mailto:juliusnatanaelsihitee@gmail.com">📧 juliusnatanaelsihitee@gmail.com</a>
+        <a href="https://github.com/jjcorpjul-byte" target="_blank">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/juliusns" target="_blank">🔗 LinkedIn</a>
+        <a href="https://instagram.com/julnsss" target="_blank">📷 Instagram</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Julius Natanael Sihite | Built with passion & code
+</footer>
+
+</body>
+</html>
